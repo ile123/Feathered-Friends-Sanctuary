@@ -1,0 +1,20 @@
+#sidebar {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    top: 16rem;
+    left: 0;
+    width: 10rem;
+    height: 15rem;
+    background-color: #81c5e0;
+    overflow-x: hidden;
+    padding-top: 5px;
+}
+
+#mainContent {
+    margin-top: 7.8rem;
+    height: 29rem;
+    width: 83rem;
+    margin-left: 13rem;
+}
