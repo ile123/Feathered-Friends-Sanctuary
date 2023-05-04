@@ -24,6 +24,7 @@ export default function NewBird() {
             age: data.age,
             lastCheckup: data.lastCheckup,
             description: data.description,
+            url: data.url,
             adopted: false
         }
         await axios.post("https://react-junior-dev-default-rtdb.europe-west1.firebasedatabase.app/birds.json", submitedData);
@@ -124,13 +125,30 @@ export default function NewBird() {
                             </div>
                         </div>
                         <div className={styles.inputField}>
-                            <h3>Description: </h3>
-                            <input type="text" className={styles.input} {...register("description", {
-                                minLength: {
-                                    value: 5,
-                                    message: "ERROR: The description is too short(min. 5 characters)!"
-                                }
-                            })} />
+                        <div className={styles.grid}>
+                            <div className={styles.item}>
+                                <h3>Description: </h3>
+                                <input type="text" className={styles.input} {...register("description", {
+                                    minLength: {
+                                        value: 5,
+                                        message: "ERROR: The description is too short(min. 5 characters)!"
+                                    }
+                                })} />
+                            </div>
+                            <div className={styles.item}>
+                                <h3>Image URL: </h3>
+                                <input type="text" className={styles.input} {...register("url", {
+                                    required: {
+                                        value: true,
+                                        message: "ERROR: Image url is required!"
+                                    },
+                                    pattern: {
+                                        value: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/g,
+                                        message: "ERROR: Invalid image url!"
+                                    }
+                                })} />
+                            </div>
+                        </div>
                         </div>
                         <Button style={styles.button} type={"submit"}>Submit</Button>
                     </form>

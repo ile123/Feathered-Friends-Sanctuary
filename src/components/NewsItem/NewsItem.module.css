@@ -1,0 +1,82 @@
+#card {
+    font-family: 'Tropical Forest', sans-serif;
+    width: 45rem;
+    margin-left: 14rem;
+    margin-bottom: 10rem;
+}
+
+#nonImportant {
+    background-color: #cceefb;
+}
+
+#date {
+    position: absolute;
+    right: 10px;
+}
+
+#important {
+    background-color: rgb(232, 73, 73);
+}
+
+#textImportant {
+    background-color: rgb(232, 73, 73);
+}
+
+#newsTitle {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    width: 40rem;
+}
+
+#nonImportantHeader {
+    padding-top: 0.5rem;
+    background-color: #cceefb;
+}
+
+#importantHeader {
+    padding-top: 0.5rem;
+    background-color: rgb(232, 73, 73);
+}
+
+#body {
+    height: 10rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#deleteButton {
+    position: absolute;
+    margin-right: 1rem;
+    right: 0;
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    width: 6rem;
+    height: 3rem;
+    padding: 0 13px;
+    color: #fff;
+    vertical-align: top;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    background: #2883dd;
+    border-color: #2883dd;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-size: 11px;
+}
+
+#deleteButton:hover {
+    background: #1b6dbf;
+    border-color: #1b6dbf;
+}
