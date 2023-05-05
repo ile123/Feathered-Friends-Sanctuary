@@ -1,0 +1,21 @@
+#table {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Tropical Forest', sans-serif;
+    border-collapse: collapse;
+    width: 45rem;
+    text-align: center;
+    margin-left: 19rem;
+    margin-top: 3rem;
+}
+
+#head {
+    border: 1px solid #ce8568;
+    background-color: #E09C81;
+}
+
+.headItem {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 5rem;
+}

@@ -38,4 +38,4 @@ export default function ErrorModal(props: any) {
       {ReactDOM.createPortal(<ModalOverlay errors={props.errors} onConfirm={props.onConfirm} />, overlayRoot)}
     </>
   );
-};
+}
