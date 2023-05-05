@@ -15,7 +15,7 @@ export default function News() {
     const [news, setNews] = useState([]);
     const [showErrorModal, setShowErrorModal] = useState(false);
     const [formErrors, setFormErrors] = useState<string[]>([]);
-    const isAdmin = useContext(AdminContext);
+    const isAdmin:any = useContext(AdminContext);
 
     const createNewsArray = (newsObjects: any) => {
         const newsArray:any = [];
@@ -93,6 +93,10 @@ export default function News() {
                                         required: {
                                             value: true,
                                             message: "ERROR: Title is required!"
+                                        },
+                                        maxLength: {
+                                            value: 20,
+                                            message: "ERROR: Title is too long(max 20 characters)!"
                                         }
                                     })} className={styles.input} />
                                     <h4 className={styles.label}>Content: </h4>
@@ -100,6 +104,14 @@ export default function News() {
                                         required: {
                                             value: true,
                                             message: "ERROR: Content is required!"
+                                        },
+                                        minLength: {
+                                            value: 10,
+                                            message: "ERROR: Content is too short(min 10 characters)!"
+                                        },
+                                        maxLength: {
+                                            value: 200,
+                                            message: "ERROR: Content is too long(max 200 characters)!"
                                         }
                                     })} className={styles.input} />
                                     <div className={styles.grid}>
