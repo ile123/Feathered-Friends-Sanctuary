@@ -2,8 +2,12 @@ import DonationTableRow from '../DonationTableRow/DonationTableRow';
 import styles from './DonationTable.module.css'
 
 export default function DonationTable(props: any) {
-    
+
     const donations = props.donations;
+
+    const onActionHandler = (data: any) => {
+        props.onAction(data);
+    }
 
     return(
         <>
@@ -19,12 +23,15 @@ export default function DonationTable(props: any) {
                 </thead>
                 <tbody>
                     {donations.map((donation: any, index: number) => {
-                        <DonationTableRow 
-                            key={index} 
-                            id={donation.id} 
-                            type={donation.type} 
-                            value={donation.value} 
-                            description={donation.description} />
+                        return (<DonationTableRow 
+                            key={index}
+                            index={index}
+                            id={donation.id}
+                            description={donation.description}
+                            type={donation.type}
+                            value={donation.value}
+                            donationType={donation.donationCategory}
+                            onAction={onActionHandler}  />);
                     })}
                 </tbody>
             </table>

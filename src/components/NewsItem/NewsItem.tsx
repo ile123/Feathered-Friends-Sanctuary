@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function NewsItem(props: any) {
 
     const important = props.important;
-    const isAdmin = useContext(AdminContext);
+    const isAdmin:any = useContext(AdminContext);
 
     async function deleteNewsHandler() {
         await axios.delete("https://react-junior-dev-default-rtdb.europe-west1.firebasedatabase.app/news/" + props.id + ".json/");

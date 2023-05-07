@@ -47,9 +47,10 @@ export default function Donations() {
         setDonatedDonations(newDonatedDonations);
         setNeededDonations(newNeededDonations);
         setOfferedDonations(newOfferedDonations);
-        console.log(newDonatedDonations);
-        console.log(newNeededDonations);
-        console.log(newOfferedDonations);
+    }
+
+    const onActionHandler = (data: any) => {
+        parseDonations(data);
     }
 
     useEffect(() => {
@@ -67,19 +68,19 @@ export default function Donations() {
                 <div className={styles.tableSection}>
                     <h3 className={styles.label}>Needed: </h3>
                     {neededDonations.length === 0 ? <h2 className={styles.noDonations}>No needed donations found!</h2>
-                        : <DonationTable donations={neededDonations} />
+                        : <DonationTable donations={neededDonations} onAction={onActionHandler} />
                     }
                 </div>
                 <div className={styles.tableSection}>
                     <h3 className={styles.label}>Offered: </h3>
                     {offeredDonations.length === 0 ? <h2 className={styles.noDonations}>No offered donations found!</h2>
-                        : <DonationTable donations={offeredDonations} />
+                        : <DonationTable donations={offeredDonations} onAction={onActionHandler} />
                     }
                 </div>
                 <div className={styles.tableSection}>
                     <h3 className={styles.label}>Donated: </h3>
                     {donatedDonations.length === 0 ? <h2 className={styles.noDonations}>No donated donations found!</h2>
-                        : <DonationTable donations={donatedDonations} />
+                        : <DonationTable donations={donatedDonations} onAction={onActionHandler} />
                     }
                 </div>
             </Layout>
