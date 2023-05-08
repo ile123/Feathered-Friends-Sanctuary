@@ -1,0 +1,75 @@
+#image {
+    width: 70rem;
+    height: 26rem;
+    margin-left: 6rem;
+    border: 5px solid #E09C81;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ce8568;
+}
+
+#grid {
+    font-family: 'Tropical Forest', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 14rem;
+    margin-left: 8.5rem;
+}
+
+.input {
+    margin-left: 5rem;
+    width: 15rem;
+}
+
+.label {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.item {
+    margin-right: 5rem;
+}
+
+#card {
+    background-color: #81c5e0;
+    width: 25rem;
+    height: 18rem;
+}
+
+#button {
+    margin-top: 1.5rem;
+    margin-left: 8rem;
+    width: 8rem;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #81c5e0 0%, #7c87da 100% );
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+#button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+}
+
+#button:active{
+    box-shadow: inset 0px 3px 7px #3c4fe0;
+    transform: translateY(2px);
+}
+
+#map {
+    width: 35rem;
+    height: 18rem;
+    border: 5px solid #E09C81;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ce8568;
+}
