@@ -1,0 +1,37 @@
+#card {
+    background-color: #81c5e0;
+    width: 25rem;
+    height: 20rem;
+}
+
+.name {
+    font-family: 'Tropical Forest', sans-serif;
+    text-align: center;
+    height: 1rem;
+    color: black;
+}
+
+#link {
+    text-decoration:none;
+}
+
+#image {
+    width: 23rem;
+    height: 15rem;
+}
+
+#item {
+    width: calc(33.33% - 10px); /* subtracting 10px to account for margin */
+    flex: 1;
+    max-width: 33.33%;
+    margin-bottom: 10rem;
+}
+
+#body {
+    background-color: #E09C81;
+}
+
+#footer {
+    background-color: #81c5e0;
+    height: 100%;
+}

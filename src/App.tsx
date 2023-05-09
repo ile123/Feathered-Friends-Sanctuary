@@ -7,8 +7,9 @@ import NewBird from './pages/NewBird/NewBird';
 import SanctuaryInformation from './pages/SanctuaryInformation/SanctuaryInformation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createContext, useState } from 'react';
-import Layout from './components/UI/Layout/Layout';
 import News from './pages/News/News';
+import BirdInformation from './pages/Birdinformation/BirdInformaion';
+import EditBird from './pages/EditBird/EditBird';
 
 export const AdminContext = createContext();
 
@@ -17,6 +18,8 @@ const router = createBrowserRouter(
     <Route path="/" element={<Outlet />}>
       <Route index element={<Home />} />
       <Route path='bird-list' element={<BirdList />} />
+      <Route path='bird-list/:id' element={<BirdInformation />} />
+      <Route path='edit-bird/:id' element={<EditBird />} />
       <Route path='donations' element={<Donations />} />
       <Route path='new-bird' element={<NewBird />} />
       <Route path='information' element={<SanctuaryInformation />} />

@@ -1,0 +1,127 @@
+#card {
+    margin-left: 13rem;
+    width: 50rem;
+    height: 30rem;
+    background-color: #81c5e0;
+    font-family: 'Tropical Forest', sans-serif;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#image {
+    margin-left: 1rem;
+    width: 20rem;
+    height: 15rem;
+    border: 5px solid #E09C81;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ce8568;
+}
+
+#name {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+#birdInformation {
+    text-align: center;
+    margin-left: 7.5rem;
+}
+
+.informationItem {
+    margin-right: 2rem;
+}
+
+#description {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    width: 40rem;
+    height: 8rem;
+    border: 2px solid #E09C81;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ce8568;
+    background-color: rgb(248, 246, 243);
+}
+
+#addoptionStatus {
+    margin-top: 0.5rem;
+    border: 2px solid #E09C81;
+    width: 10rem;
+    padding-top: 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(248, 246, 243);
+}
+
+#adoptButton {
+    margin-left: 1rem;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #15883e;
+    height: 48px;
+}
+
+#adoptButton:hover{
+    background-color: #1db954;
+}
+
+#changeButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #e41d1d;
+    height: 48px;
+}
+
+#changeButton:hover{
+    background-color: #c61111;
+}
+
+#buttons {
+    margin-top: 0.5rem;
+    margin-left: 13rem;
+}
