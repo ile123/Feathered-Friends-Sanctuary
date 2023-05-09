@@ -77,7 +77,7 @@ export default function EditBird() {
                         <div className={styles.grid}>
                             <div className={styles.item}>
                                 <h3>Name: </h3>
-                                <input type="text" value={bird.name} {...register('name', { 
+                                <input type="text" defaultValue={bird.name} {...register('name', { 
                                         required: {
                                             value: true,
                                             message: "ERROR: Name is required!"
@@ -102,7 +102,7 @@ export default function EditBird() {
                         <div className={styles.grid}>
                             <div className={styles.item}>
                                 <h3>Species: </h3>
-                                    <select value={bird.species} {...register('species', {
+                                    <select defaultValue={bird.species} {...register('species', {
                                         required: {
                                             value: true,
                                             message: "ERROR: Species is requred!"
@@ -131,7 +131,7 @@ export default function EditBird() {
                 <div className={styles.grid}>
                     <div className={styles.item}>
                         <h3>Age: </h3>
-                        <input type="number" value={bird.age} className={styles.input} min={1} max={100} {...register("age", {
+                        <input type="number" defaultValue={bird.age} className={styles.input} min={1} max={100} {...register("age", {
                             required: {
                                 value: true,
                                 message: "ERROR: Age is required!"
@@ -140,7 +140,7 @@ export default function EditBird() {
                     </div>
                 <div className={styles.item}>
                     <h3 id={styles.lastCheckup}>Last checkup: </h3>
-                        <input type="date" value={bird.lastCheckup} id={styles.date_field} {...register("lastCheckup", {
+                        <input type="date" defaultValue={bird.lastCheckup} id={styles.date_field} {...register("lastCheckup", {
                             required: {
                                 value: true,
                                 message: "ERROR: Last checkup date required!"
@@ -153,7 +153,7 @@ export default function EditBird() {
                 <div className={styles.grid}>
                     <div className={styles.item}>
                         <h3>Description: </h3>
-                            <input type="text" className={styles.input} value={bird.description} {...register("description", {
+                            <input type="text" className={styles.input} defaultValue={bird.description} {...register("description", {
                                 minLength: {
                                     value: 5,
                                     message: "ERROR: The description is too short(min. 5 characters)!"
@@ -162,7 +162,7 @@ export default function EditBird() {
                     </div>
                 <div className={styles.item}>
                 <h3>Image URL: </h3>
-                <input type="text" className={styles.input} value={bird.url} {...register("url", {
+                <input type="text" className={styles.input} defaultValue={bird.url} {...register("url", {
                             required: {
                                 value: true,
                                 message: "ERROR: Image url is required!"
