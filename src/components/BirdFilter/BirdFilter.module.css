@@ -1,0 +1,31 @@
+#card {
+    background-color: #81c5e0;
+    height: 3rem;
+    width: 45rem;
+    margin-bottom: 2rem;
+    margin-left: 16rem;
+    margin-top: 2rem;
+}
+
+#grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin-right: 2rem;
+}
+
+.select {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#nameSearch {
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}

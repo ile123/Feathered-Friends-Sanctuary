@@ -3,3 +3,9 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+#noBirds {
+    font-family: 'Tropical Forest', sans-serif;
+    margin-left: 33rem;
+    margin-top: 10rem;
+}
